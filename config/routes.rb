@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  
-  get '/blogs', to: 'blogs#index'
-  
+  resources :blogs do
+    collection do
+      post :confirm
+      patch :confirm
+    end
+  end
 end
