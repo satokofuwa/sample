@@ -4,8 +4,6 @@ module BlogsHelper
          unless blog.id?
             blogs_path
          else
-            blog_path 
-         end
-         
+            blo
     end
 end
